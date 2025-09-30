@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let contador, atual, proximo, anterior, resposta;
+        resposta = "s";
+
+        while (resposta == "s" || resposta == "S") {
+            proximo = 0;
+            anterior = 0;
+            atual = 1;
+            contador = 0;
+            contador = parseInt(prompt("Quantos numeros fibonacci deseja gerar"))
+
+            alert(atual)
+
+            for (let i = 2; i < contador; i++) {
+
+                proximo = anterior + atual
+                alert(proximo);
+                anterior = atual;
+                atual = proximo;
+            }
+
+              resposta = prompt("Deseja repetir? (s/n)");
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
