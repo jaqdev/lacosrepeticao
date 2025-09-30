@@ -9,26 +9,27 @@
 </head>
 
 <body>
-    <script>
-        let numero, resto;
-        let resp = prompt("Digite s para começar ou qualquer outra tecla para sair");
+ <script>
 
-         while (resp == "s"){
-        numero = parseInt(prompt("Digite um número: "))
-        resto = numero % 2
 
-        if (resto == 0) {
-            alert("Esse número é par")
-        } else {
-            alert("Esse número é ímpar")
-        }
-            resp = prompt("Digite s para repetir ou qualquer outra tecla para sair");
+let numero;
+let continuar;
 
-        }
-    
+do {
+  numero = Number(prompt("Digite um número:"));
+  
+  if (numero % 2 === 0) {
+    alert("O número é par.");
+  } else {
+    alert("O número é ímpar.");
+  }
+  
+  continuar = prompt("Digite 's' para continuar:");
 
-    </script>
+} while (continuar === "s")
 
+
+</script>
 </body>
 
 </html>
