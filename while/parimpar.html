@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imparpar</title>
+</head>
+
+<body>
+    <script>
+        let numero, resto;
+        let resp = prompt("Digite s para começar ou qualquer outra tecla para sair");
+
+         while (resp == "s"){
+        numero = parseInt(prompt("Digite um número: "))
+        resto = numero % 2
+
+        if (resto == 0) {
+            alert("Esse número é par")
+        } else {
+            alert("Esse número é ímpar")
+        }
+            resp = prompt("Digite s para repetir ou qualquer outra tecla para sair");
+
+        }
+    
+
+    </script>
+
+</body>
+
+</html>

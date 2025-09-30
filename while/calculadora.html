@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo</title>
+</head>
+
+<body>
+    <script>
+   let resp = prompt("Digite s para calcular dois numeros")
+
+    while (resp == "s") {
+        let numero1 = parseFloat(prompt("Digite o primeiro número:"));
+        let numero2 = parseFloat(prompt("Digite o segundo número:"));
+        let operacao = prompt("Escolha a operação: +, -, * ou /");
+        
+        let resultado;
+
+        if (operacao == "+") {
+            resultado = numero1 + numero2;
+        } else if (operacao == "-") {
+            resultado = numero1 - numero2;
+        } else if (operacao == "*") {
+            resultado = numero1 * numero2;
+        } else if (operacao == "/") {
+            resultado = numero1 / numero2;
+        } else {
+            alert("Operação inválida!");
+            resultado = "erro";
+        }
+
+        if (resultado !== "erro") {
+            alert("Resultado: " + resultado);
+        }
+
+        resp = prompt("Digite s para repetir ou qualquer outra tecla para sair");
+    }
+
+    </script>
+</body>
+
+</html>
